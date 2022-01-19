@@ -1,0 +1,157 @@
+:root{
+     /* Primary */
+
+    --softBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* ### Neutral */
+    
+    --VeryDarkBlueMain: hsl(217, 54%, 11%);
+    --VeryDarkBlueCard : hsl(216, 50%, 16%);
+    --VeryDarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: var(--VeryDarkBlueCard);
+}
+
+.container{
+    background-color: var(--VeryDarkBlueCard);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.card{
+    margin: 3em 0em;
+    width: 18rem;
+    border-radius: 10px;
+    background-color: var(--VeryDarkBlueLine);
+    box-shadow: 1em 2em 1em var(--VeryDarkBlueMain);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-img{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 25vh;
+    margin: 17px;
+}
+.main-img img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 8px 0px;
+
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    margin: 1em 0em;
+}
+h2:hover{
+    color: cyan;
+}
+
+p{
+    color: var(--softBlue);
+    font-size: 17px;
+}
+
+.details{
+
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.eth{
+    width: 30%;
+    color: var(--Cyan);
+    display: flex;
+    flex-direction: row;
+
+
+}
+.eth img, .time-left img{
+    height: 17px;
+    padding-right: 5px;
+}
+.eth p{
+    color: var(--Cyan);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.time-left{
+    width: 30%;
+    color: var(--softBlue);
+    display: flex;
+    flex-direction: row;
+}
+.time-left p{
+    font-size: 13px;
+}
+.hr-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 18%;
+    padding-right: 19%;
+}
+.hr-text::before{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--White);
+}
+hr{
+    color: white;
+}
+
+.text, .details, .author{
+    margin: 17px;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+}
+
+.author img{
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.Jules{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 1em;
+    color: var(--softBlue);
+}
+
+.couleur{
+    color: white;
+}
+h2:hover{
+    color: cyan;
+}
+
+@media only screen and (max-width: 414px) {
+    body {
+      background-color: lightblue;
+    }
+  }
